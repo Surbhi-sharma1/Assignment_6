@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import fs from 'fs/promises';
 import { User } from '../public/user';
 //import {path} from 'path';
-class controller {
+class UserController {
 
     public async getAll(req: Request, res: Response) {
         const users = await fs.readFile('./src/data/users.json', { encoding: 'utf-8' });
@@ -36,7 +36,7 @@ class controller {
         const newUsers = data.concat(newUser);
         await fs.writeFile('./src/data/users.json', JSON.stringify(newUsers));
         res.status(201).send("User added successfully!");
-        
+
     }
     public async updateUser(req: Request, res: Response) {
         const data = await fs.readFile('./src/data/users.json', 'utf-8');
@@ -77,4 +77,4 @@ class controller {
 
 }
 
-export const userController = new controller();
+export const userController = new UserController();
