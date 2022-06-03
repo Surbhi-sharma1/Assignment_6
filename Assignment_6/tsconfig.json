@@ -1,22 +1,21 @@
 {
-  "compilerOptions": {
-     "module": "esnext",
-      "target": "es6",
-      "noImplicitAny": true,
-      "moduleResolution": "node",
-      "experimentalDecorators": true,
-      "resolveJsonModule": true,
-      "esModuleInterop": true,
-      "sourceMap": true,
-      "outDir": "./dist",
-      "allowSyntheticDefaultImports": true,
-      "baseUrl": ".",
-      /* "paths": {
+    "compilerOptions": {
+        "module": "esnext",
+        "target": "es6",
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "outDir": "./dist",
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        /* "paths": {
           "*": [
               "node_modules/*",
               "server/src/types/*"
           ]
       } */
-  }
+    }
 }
- 

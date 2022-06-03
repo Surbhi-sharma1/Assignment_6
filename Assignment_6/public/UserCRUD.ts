@@ -154,8 +154,11 @@ export class UserCRUD implements CRUD<User>
                 headers: { 'Content-Type': 'application/json' }
             });
         const response1 = await fetch(this.myURL + '/users');
+        console.log(response1);
         const data1 = await response1.json();
+        console.log(data1);
         const newUser = data1[data1.length - 1];
+        console.log(newUser);
 
         this.users.push(newUser);
         this.load();
